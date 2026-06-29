@@ -1,4 +1,4 @@
-markdown# ❤️ Heart Failure Prediction
+❤️ Heart Failure Prediction
 
 Predicts the likelihood of death from heart failure using clinical patient data and supervised machine learning. Cardiovascular diseases are the leading cause of death globally, claiming an estimated **17.9 million lives each year** (WHO). Early detection through predictive modeling can support timely medical intervention and better resource allocation in clinical settings.
 
