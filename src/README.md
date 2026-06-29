@@ -95,14 +95,25 @@ python src/evaluate.py
 
 ## 📈 Results
 
-> Fill in your actual numbers from `evaluate.py` output after running it.
+Evaluated on a held-out test set (60 patients, stratified split).
 
-| Threshold | Precision | Recall | F1-score |
-|---|---|---|---|
-| Default (0.5) | — | — | — |
-| Tuned (F1-optimized) | — | — | — |
+| Threshold | Precision (Death) | Recall (Death) | F1-score (Death) | Overall Accuracy |
+|---|---|---|---|---|
+| Default (0.5) | 0.85 | 0.58 | 0.69 | 0.83 |
+| Tuned (F1-optimized, 0.4631) | 0.80 | 0.63 | 0.71 | 0.83 |
 
-**ROC-AUC:** —
+**ROC-AUC:** 0.8524
+
+**Key insight:** The dataset is imbalanced (~32% death events). Threshold tuning shifts the decision boundary slightly lower (0.5 → 0.4631), trading a small amount of precision for improved recall on the minority "Death" class — catching more at-risk patients, which matters more in a clinical screening context than reducing false alarms.
+
+### Confusion Matrix
+![Confusion Matrix](outputs/confusion_matrix.png)
+
+### ROC Curve
+![ROC Curve](outputs/roc_curve.png)
+
+### Precision-Recall Curve
+![PR Curve](outputs/pr_curve.png)
 
 ### Confusion Matrix
 ![Confusion Matrix](outputs/confusion_matrix.png)
