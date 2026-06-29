@@ -95,12 +95,7 @@ python src/evaluate.py
 
 ## 📈 Results
 
-> Fill in your actual numbers from `evaluate.py` output after running it.
 
-| Threshold | Precision | Recall | F1-score |
-|---|---|---|---|
-| Default (0.5) | — | — | — |
-| Tuned (F1-optimized) | — | — | — |
 
 **ROC-AUC:** —
 
